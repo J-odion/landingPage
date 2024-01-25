@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Cudium</title>
+
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="forms.scss" />
+  </head>
+  <body>
+    <div class="logo">
+      <a
+        href="https://cudium.com/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <img
+          class="logo-img"
+          src="https://cudium.com/images/logo-white.png"
+          alt="" />
+      </a>
+
+      <a
+        href="https://cudium.com/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <h1 class="logo-text">Cudium</h1>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="comp">
+        <h1>The First step towards bold cross-border solution</h1>
+        <!-- <p>Speak with one of our expert</p> -->
+      </div>
+
+      <div class="form">
+        <form
+          action="https://formspree.io/f/mpzvqjkz"
+          method="POST"
+          id="survey-form"
+          name="survey-form">
+          <fieldset>
+            <label
+              for="name"
+              id="name-label">
+              <div class="lab">
+                <p>Name</p>
+                <span>*</span>
+              </div>
+              <input
+                class=""
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name (required)"
+                required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label
+              for="email"
+              id="email-label">
+              <div class="lab">
+                <p>Email</p>
+                <span>*</span>
+              </div>
+              <input
+                class=""
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email (required)"
+                required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label
+              for="number"
+              id="number-label">
+              <div class="lab">
+                <p>Phone Number</p>
+                <span>*</span>
+              </div>
+              <input
+                class=""
+                type="number"
+                id="number"
+                name="number"
+                min="11"
+                placeholder="Enter you age (required)"
+                required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="preffered-currency">
+              <div class="lab">
+                <p>Preferred Currency</p>
+                <span>*</span>
+              </div>
+              <select
+                id="preffered-currency"
+                name="preffered-currency"
+                class="selet">
+                <option
+                  selected
+                  value="NGN">
+                  NGN
+                </option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label
+              for="country-of-remittance"
+              id="country-of-remittance-label">
+              <div class="lab">
+                <p>Country of Remittance?</p>
+                <span>*</span>
+              </div>
+              <input
+                class=""
+                type="text"
+                id="country-of-remittance"
+                name="country-of-remittance"
+                placeholder="Enter your Country of Remittance (required)"
+                required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label
+              for="monthly-average-volume"
+              id="monthly-average-volume-label">
+              <div class="lab">
+                <p>Average Monthly Volume</p>
+                <span>*</span>
+              </div>
+              <input
+                class=""
+                type="number"
+                id="monthly-average-volume"
+                name="monthly-average-volume"
+                placeholder="Enter you monthly average volume (required)"
+                required />
+            </label>
+          </fieldset>
+          <button
+            id="submit"
+            type="submit"
+            class="btn">
+            Submit the form
+          </button>
+        </form>
+      </div>
+
+      <div class="footer">
+        <p>© 2024 Cudium</p>
+        <div class="menus">
+          <p>
+            <a
+              class="menu"
+              href="https://cudium.com/terms"
+              >Terms of Use</a
+            >
+          </p>
+          <p>
+            <a
+              class="menu"
+              href="Privacy Policy"
+              >Privacy Policy</a
+            >
+          </p>
+
+          <p>
+            <a
+              class="menu"
+              href=""
+              >Contact</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
