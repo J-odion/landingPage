@@ -131,7 +131,10 @@ input{
     border-bottom: solid 1px black;
     padding: 10px 3px;
     font-size: 16px;
-    color: var(--light_grey);
+    font-weight: 600;
+    color: var(--dark_grey);
+    letter-spacing: 1.2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 select{
     width: 100%;
