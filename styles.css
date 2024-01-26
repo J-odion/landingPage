@@ -105,7 +105,7 @@ body{
     display: flex;
     padding: 20px 50px;
     background-color: var(--white);
-
+    border-radius: 5px;
 }
 form{
     display: flex;
@@ -180,11 +180,17 @@ button{
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    color: var(--white);
+
 }
 .menus{
     display: flex;
     flex-direction: row;
     font-size: 14px;
+    color: var(--white) !important;
+}
+.menus a{
+    color: var(--white);
 }
 
 /* Tablet Styles (768px to 991px) */
@@ -229,10 +235,12 @@ button{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 80px 50px;
     }
     .footer, .menus{
         display: flex;
         flex-direction: row;
         gap: 14px;
+        
     }
   }
