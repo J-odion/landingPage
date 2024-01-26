@@ -31,8 +31,7 @@ body{
     /* justify-content: center; */
     align-items: center;
     justify-items:center ;
-    background-color: var(--light_grey);
-    background: url('https://cudium.com/images/hero.png') fixed no-repeat center;
+    background: url('https://cudium.com/images/hero.png') fixed no-repeat center bottom var(--dark_grey);
 
 
     /* background: linear-gradient( 450deg, #949ba5 0%,  #47f7cb 80%); */
@@ -79,6 +78,21 @@ body{
 .comp h1{
     font-size: 50px;
     margin-bottom: 50px;
+    z-index: 4;
+}
+.motto{
+    color: var(--white);
+}
+.motto::after{
+    content: "";
+    display: block;
+    border-bottom: solid 40px var(--primary_green);
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    top: -40px;
+    z-index: -1;
+    background-color: #949ba5;
 }
 .comp p{
     font-size: 16px;
@@ -131,16 +145,21 @@ input{
     border-bottom: solid 1px black;
     padding: 10px 3px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--dark_grey);
     letter-spacing: 1.2px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 select{
     width: 100%;
     border: none;
     background: none;
     outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark_grey);
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
 }
 select::selection{
     background-color: var(--light_grey);
