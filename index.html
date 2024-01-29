@@ -48,6 +48,7 @@
       </div>
 
       <div class="form">
+        <div id="my-form-status"></div>
         <form
           action="https://formspree.io/f/mpzvqjkz"
           method="POST"
@@ -190,7 +191,6 @@
               >Privacy Policy</a
             >
           </p>
-
           <p>
             <a
               class="menu"
@@ -201,5 +201,64 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const formStatus = document.getElementById('my-form-status');
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var data = new FormData(event.target);
+        const responseDataMessage = 'Thanks for your submission!';
+
+        // Disable form to prevent multiple submissions
+        form.setAttribute('disabled', true);
+
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              return response.json().then((data) => Promise.reject(data));
+            }
+          })
+          .then((responseData) => {
+            // Store status message in localStorage
+            // Display status message
+            formStatus.innerHTML = responseDataMessage;
+
+            form.reset();
+            form.style.display = 'none';
+            localStorage.setItem('formStatus', responseDataMessage);
+          })
+          .catch((error) => {
+            // Store error message in localStorage
+            // Display error message
+            formStatus.innerHTML =
+              'Oops! There was a problem submitting your form';
+            formStatus.classList.add('error');
+          })
+          .finally(() => {
+            // Enable the form after processing
+            form.removeAttribute('disabled');
+          });
+      }
+
+      const form = document.getElementById('survey-form');
+      form.addEventListener('submit', handleSubmit);
+
+      // Check if there is a stored status message and display it
+      const storedStatus = localStorage.getItem('formStatus');
+      if (storedStatus) {
+        formStatus.classList.remove('error');
+        formStatus.innerHTML = storedStatus;
+        form.style.display = 'none'; // Hide the form if there is a stored status
+      }
+    </script>
   </body>
 </html>

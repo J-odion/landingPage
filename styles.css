@@ -98,9 +98,24 @@ body{
     width: 75%;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     padding: 20px 10px;
     background-color: var(--white);
     border-radius: 5px;
+}
+
+#my-form-status.error{
+    padding: 25px;
+    background: rgb(235 87 87);
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 1.3em;
+    position: sticky;
+    top: 25px;
+    z-index: 9999;
 }
 form{
     display: flex;
@@ -176,6 +191,8 @@ button{
     align-items: center;
     margin-top: 100px;
     color: var(--white);
+    background-color: var(--dark_grey);
+    align-items: flex-end;
 
 }
 .menus{
@@ -195,7 +212,6 @@ button{
       /* Add other tablet-specific styles here */
     }
   }
-
   /* Desktop Styles (992px and above) */
   @media only screen and (min-width: 992px) {
     body{
@@ -204,7 +220,6 @@ button{
         position: relative;
         overflow-x: hidden;
     }
-
     .logo{
         margin-bottom: 5px;
     }
@@ -222,8 +237,7 @@ button{
         padding: 10px 20px;
         position: relative;
         z-index: 2;
-    }
-    
+    }    
     .comp{
         width: 70%;
         line-height: 100px;
