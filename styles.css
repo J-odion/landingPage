@@ -21,6 +21,7 @@
 a{
     text-decoration: none;
     color: var(--black);
+    overflow-x: hidden;
 }
 
 body{
@@ -31,7 +32,7 @@ body{
     align-items: center;
     justify-items:center ;
     background: url('https://cudium.com/images/hero.png') fixed no-repeat center bottom var(--dark_grey);
-    
+    overflow-x: hidden;
 }
 .logo {
     display: flex;
