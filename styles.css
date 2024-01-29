@@ -141,7 +141,10 @@ label, .labels {
 .lab span{
     color: red;
 }
-
+span {
+    font-size: 14px;
+    color: darkred;
+}
 fieldset{
     border: none;
     display: flex;
