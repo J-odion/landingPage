@@ -50,7 +50,7 @@
       <div class="form">
         <div id="my-form-status"></div>
         <form
-          action="https://formspree.io/f/mpzvqjkz"
+          action="https://formspree.io/f/mwkgvzgn"
           method="POST"
           id="survey-form"
           name="survey-form">
@@ -153,9 +153,10 @@
               for="monthly-average-volume"
               id="monthly-average-volume-label">
               <div class="lab">
-                <p>Average Monthly Volume</p>
+                <p>Average Monthly Volume (USD)</p>
                 <span>*</span>
               </div>
+
               <input
                 class=""
                 type="number"
@@ -234,7 +235,7 @@
 
             form.reset();
             form.style.display = 'none';
-            localStorage.setItem('formStatus', responseDataMessage);
+            // localStorage.setItem('formStatus', responseDataMessage);
           })
           .catch((error) => {
             // Store error message in localStorage
@@ -253,10 +254,10 @@
       form.addEventListener('submit', handleSubmit);
 
       // Check if there is a stored status message and display it
-      const storedStatus = localStorage.getItem('formStatus');
+      // const storedStatus = localStorage.getItem('formStatus');
       if (storedStatus) {
         formStatus.classList.remove('error');
-        formStatus.innerHTML = storedStatus;
+        // formStatus.innerHTML = storedStatus;
         form.style.display = 'none'; // Hide the form if there is a stored status
       }
     </script>
