@@ -86,11 +86,11 @@ body{
 .motto::after{
     content: "";
     display: block;
-    border-bottom: solid 40px var(--primary_green);
+    border-bottom: solid 220px var(--dark_grey);
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    top: -40px;
+    top: -210px;
     z-index: -1;
     background-color: #949ba5;
 }
