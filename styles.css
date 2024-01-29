@@ -79,7 +79,7 @@ body{
     width: 100%;
 }
 .comp h1{
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     margin-bottom: 30px;
     z-index: 4;
 }
@@ -139,7 +139,7 @@ input{
     border: none;
     border-bottom: solid 1px black;
     padding: 10px 3px;
-    font-size: 1px;
+    font-size: 1.1em;
     font-weight: 400;
     color: var(--dark_grey);
     letter-spacing: 1.2px;
