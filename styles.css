@@ -30,9 +30,8 @@ body{
     height: 100vh;
     align-items: center;
     justify-items:center ;
-    background-repeat: no-repeat;
-    background-color: var(--dark_grey);
-    background-position: bottom;
+    background: url('https://cudium.com/images/hero.png') fixed no-repeat center bottom var(--dark_grey);
+    
 }
 .logo {
     display: flex;
@@ -79,6 +78,8 @@ body{
 }
 .motto{
     color: var(--white);
+    background-color: var(--dark_grey);
+    padding: 20px 0;
 }
 
 .comp p{
@@ -87,10 +88,10 @@ body{
 }
 
 .form{
-    width: 70%;
+    width: 75%;
     justify-content: center;
     display: flex;
-    padding: 20px 50px;
+    padding: 20px 10px;
     background-color: var(--white);
     border-radius: 5px;
 }
@@ -98,7 +99,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
 }
 label, .labels {
@@ -193,6 +194,7 @@ button{
     body{
         background: url('https://cudium.com/images/hero.png') fixed no-repeat center bottom var(--dark_grey);
         /* background: linear-gradient( 450deg, #949ba5 0%,  #47f7cb 80%); */
+        position: relative;
     }
 
     .logo{
@@ -207,17 +209,13 @@ button{
     .logo-text{
         font-size: 45px;
     }
-    .motto::after{
-        content: "";
-        display: block;
-        border-bottom: solid 220px var(--dark_grey);
+    .motto{
+        color: var(--white);
+        padding: 10px 20px;
         position: relative;
-        width: 80%;
-        margin: 0 auto;
-        top: -210px;
-        z-index: -1;
-        background-color: #949ba5;
+        z-index: 2;
     }
+    
     .comp{
         width: 70%;
         line-height: 100px;
@@ -227,7 +225,7 @@ button{
     }
     .comp h1{
         font-size: 90px;
-        margin-bottom: -50px;
+        /* margin-bottom: -50px; */
     }
     .comp p{
         font-size: 20px;
