@@ -43,7 +43,7 @@ body{
     align-items: center;
     padding: 20px;
     background-color: var(--dark_grey);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .logo-text{
